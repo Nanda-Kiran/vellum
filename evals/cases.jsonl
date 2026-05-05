@@ -1,0 +1,10 @@
+{"id":"case-001","scenario":"duplicate_stripe_charge","expected_finding":"duplicate_payment"}
+{"id":"case-002","scenario":"zombie_saas_plaid","expected_finding":"zombie_saas"}
+{"id":"case-003","scenario":"vendor_domain_mismatch","expected_finding":"domain_mismatch"}
+{"id":"case-004","scenario":"policy_cap_violation","expected_finding":"policy_cap"}
+{"id":"case-005","scenario":"normal_reimbursement","expected_finding":"none"}
+{"id":"case-006","scenario":"refund_after_duplicate","expected_finding":"info_only"}
+{"id":"case-007","scenario":"new_vendor_clean_domain","expected_finding":"none"}
+{"id":"case-008","scenario":"high_amount_unknown_vendor","expected_finding":"manual_review"}
+{"id":"case-009","scenario":"recurring_charge_recent_usage","expected_finding":"none"}
+{"id":"case-010","scenario":"suspicious_invoice_email","expected_finding":"domain_mismatch"}
