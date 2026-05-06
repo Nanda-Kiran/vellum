@@ -16,7 +16,7 @@ Vellum is an always-on AI finance controller for SMB/startup teams. It monitors 
 
 ## 💰 Business Impact
 
-> **A 50-person startup loses an average of $47,000 per year to financial leakage. Vellum catches it automatically, every 90 seconds, at $199/month.**
+> **A 50-person startup loses an average of $47,000 per year to financial leakage. Vellum catches it automatically, every 90 seconds, at $199/month(Estimated).**
 
 ### The Problem
 
@@ -104,21 +104,10 @@ Capturing 1% of this market at $199/month implies ~$105M ARR potential.
 
 ---
 
-### Pricing
-
-| Plan | Price | Who it's for |
-|---|---|---|
-| Starter | $199/month | Up to 50 employees, 3 integrations |
-| Growth | $499/month | Up to 200 employees, all integrations, multi-user approvals |
-| Enterprise | Custom | 200+ employees, custom policy rules, dedicated support |
-
----
-
 ### Built in 5 Hours
 
 Vellum was built by a two-person team in a 5-hour hackathon using Cursor, LangGraph, Groq, and Snyco automation.
 
-> *"The controller a 50-person startup can't afford to hire - for $199/month."*
 
 ## Quickstart (clone and run)
 
