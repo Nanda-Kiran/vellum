@@ -14,5 +14,9 @@ htmlcov/
 venv/
 env/
 .env
-*.db
+*.db-shm
+*.db-wal
+google_token.json
+client_secret_*.json
+vellum-*.json
 .DS_Store
