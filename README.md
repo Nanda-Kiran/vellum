@@ -1,7 +1,18 @@
 # Vellum
 
-Vellum is an always-on AI controller agent for SMB finance teams, built as a multi-agent system that monitors Plaid, Stripe, Gmail, and Google Workspace to detect fraud, duplicate payments, and policy violations, then surfaces findings in Slack and generates audit packs for downstream review.
-The always-on AI controller for startups. Catches fraud, duplicate payments, and policy violations across Plaid, Stripe, Gmail, and Google Workspace - all from Slack.
+Vellum is an always-on AI finance controller for SMB/startup teams. It monitors Plaid, Stripe, Gmail, and Google Workspace, detects fraud/duplicate/policy issues, pushes actionable findings to Slack, and generates audit-ready summaries in Google Docs.
+
+## Architecture
+
+![Vellum architecture](./Architecture_Vellum.png)
+
+## Project overview
+
+- **Ingest + detect:** Scheduler-driven ingestion collects transactions/emails/expense rows and runs deterministic rules (duplicate, zombie SaaS, policy-cap, domain mismatch).
+- **Agent orchestration:** A supervisor coordinates reconciliation, compliance, forensics enrichment, and reporting.
+- **Slack-first operations:** Findings are posted as cards with `Why` and approval actions, plus CFO DM/app-mention chat for quick questions.
+- **Trust ledger:** Findings/actions are persisted in SQLite for traceability, approvals, and reporting.
+- **Audit output:** `/audit` generates a Google Doc with executive summary, total revenue saved, and business impact.
 
 ## Quickstart (clone and run)
 
